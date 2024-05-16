@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary"
+        android:padding="10dp"
+        android:text="To Do"
+        android:textColor="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTodo"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/list_task"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+        <Button
+            android:id="@+id/moretodo"
+            android:layout_width="match_parent"
+           android:backgroundTint="#F4F1F1"
+            android:text="Selengkapnya"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary"
+        android:padding="10dp"
+        android:layout_marginTop="20sp"
+        android:text="In Progress"
+        android:textColor="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProgress"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/list_task"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+        <Button
+            android:id="@+id/moreprogress"
+            android:layout_width="match_parent"
+            android:backgroundTint="#F4F1F1"
+            android:text="Selengkapnya"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary"
+        android:padding="10dp"
+        android:layout_marginTop="20sp"
+        android:text="Done"
+        android:textColor="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/list_task"
+        android:layout_marginTop="5dp" />
+
+        <Button
+            android:id="@+id/moreprodone"
+            android:layout_width="match_parent"
+            android:backgroundTint="#F4F1F1"
+            android:text="Selengkapnya"
+            android:layout_marginBottom="40dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

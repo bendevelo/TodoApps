@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context=".ui.inputActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20sp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/task"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Task title" />
+
+        <EditText
+            android:id="@+id/taskdesc"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Task Description" />
+
+        <EditText
+            android:id="@+id/due"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:focusable="false"
+            android:drawableEnd="@drawable/baseline_calendar_month_24"
+            android:hint="Due Date" />
+
+        <EditText
+            android:id="@+id/reminder"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Reminder" />
+
+        <EditText
+            android:id="@+id/status"
+            android:focusable="false"
+            android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Status" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/file"
+                android:layout_width="210dp"
+                android:focusable="false"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:hint="file" />
+
+            <ImageView
+                android:id="@+id/video"
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_videocam_24"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"/>
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_camera_alt_24"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:text="save"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

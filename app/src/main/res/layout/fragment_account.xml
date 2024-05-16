@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.Account.AccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20sp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bground"
+        android:elevation="2dp"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:src="@drawable/profil"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="Admin 1"/>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20sp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_height="wrap_content"
+        android:text="Alamat :"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20sp"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:text="Example 1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20sp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_height="wrap_content"
+        android:text="Nomor Handphone :"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20sp"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:text="086161-xxx-xxxx"/>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="title_home">Home</string>
+    <string name="title_task">Task</string>
+    <string name="title_galery">Gallery</string>
+    <string name="title_Account">Account</string>
+</resources>
